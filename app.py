@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from  flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+
 
 app = Flask(__name__)
 
@@ -8,6 +9,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "myapplication123"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
+
 
 #Create the DataBase
 class Form(db.Model):
@@ -32,6 +34,8 @@ def index():
                     email=email, date=date_obj, occupation=occupation)
         db.session.add(form)
         db.session.commit()
+
+        flash(f"{first_name}, your form was submitted successfully!", "success")
 
     return render_template("index.html")
 if __name__ == '__main__':
