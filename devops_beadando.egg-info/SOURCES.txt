@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+devops_beadando/__init__.py
+devops_beadando/app.py
+devops_beadando.egg-info/PKG-INFO
+devops_beadando.egg-info/SOURCES.txt
+devops_beadando.egg-info/dependency_links.txt
+devops_beadando.egg-info/entry_points.txt
+devops_beadando.egg-info/requires.txt
+devops_beadando.egg-info/top_level.txt
+devops_beadando/templates/index.html
