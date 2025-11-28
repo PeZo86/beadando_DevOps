@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Beadando.iml" filepath="$PROJECT_DIR$/.idea/Beadando.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/beadando_DevOps.iml" filepath="$PROJECT_DIR$/.idea/beadando_DevOps.iml" />
     </modules>
   </component>
 </project>
